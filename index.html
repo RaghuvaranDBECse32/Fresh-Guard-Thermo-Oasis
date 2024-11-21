@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Guard Thermo Oasis</title>
+  <link rel="icon" href="logo.png" type="image/png"> <!-- Favicon -->
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: "Times New Roman", "Calibri", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #e23744; /* Zomato-inspired red */
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .logo-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .logo-container img {
+      max-width: 150px;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: #e23744;
+      font-weight: bold;
+    }
+
+    p, li {
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+
+    .team-section, .details-section, .skills-section {
+      margin-bottom: 30px;
+      padding: 20px;
+      border: 1px solid #e23744;
+      border-radius: 10px;
+      background: #fdfdfd;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 15px 0;
+      background: #333;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    /* Button Styling */
+    .button {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #e23744;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .button:hover {
+      background: #a81f32;
+      transform: scale(1.05);
+    }
+
+    /* Dynamic Navbar (Zomato-inspired) */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #e23744;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #a81f32;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  Fresh Guard Thermo Oasis
+</header>
+
+<nav>
+  <div><a href="#">Home</a></div>
+  <div>
+    <a href="#overview">Overview</a>
+    <a href="#team">Team</a>
+    <a href="#leader">Team Leader</a>
+    <a href="#related-links">Links</a>
+  </div>
+</nav>
+
+<div class="logo-container">
+  <img src="logo.png" alt="Fresh Guard Logo">
+</div>
+
+<div class="container">
+
+  <section id="overview" class="details-section">
+    <h1>Project Overview</h1>
+    <p>
+      To optimize post-harvest tomato storage, we aim to integrate advanced technology, including Peltier devices, temperature sensors, humidity sensors, and ethylene observers, while prioritizing cost-effectiveness, feasibility, scalability, environmental sustainability, and lifetime storage capabilities.
+    </p>
+    <p>
+      By leveraging these technologies, we aspire to maintain precise temperature and humidity levels throughout the storage process. Our goal is to achieve this in a manner that is economically viable, adaptable to various scales of operation, environmentally friendly, and capable of ensuring prolonged storage durations without compromising the freshness or quality of the tomatoes.
+    </p>
+    <p>
+      This project is part of my graduation at Anna University Regional Campus, Tirunelveli, during my final year of <b>B.E. Computer Science and Engineering</b> and our team worked under the mentorship of <b>Dr. J. Roselin</b>. Our team was selected for <b>Level-1</b> of the <b>Ideation Process</b> in <b>Niral Thiruvizha</b>, conducted by <b>Tamil Nadu Skill Development Corporation and Naan Mudhalvan</b>, standing out among 144 teams. However, we did not qualify for <b>Level-2 Demonstration Process</b>.
+    </p>
+  </section>
+
+  <section id="team" class="team-section">
+    <h2>Team Members (2024 Passed Out)</h2>
+    <ul>
+      <li>Sharmila L A - B.E. Computer Science and Engineering</li>
+      <li>Varsha G P - B.E. Computer Science and Engineering</li>
+      <li>Abisheak S T - B.E. Computer Science and Engineering</li>
+    </ul>
+  </section>
+
+  <section id="leader" class="skills-section">
+    <h2>Team Leader</h2>
+    <p>Raghuvaran D - B.E. Computer Science and Engineering</p>
+  </section>
+
+  <section id="related-links">
+    <h2>Related Links</h2>
+    <a href="https://drive.google.com/drive/folders/1QrbJ1h6YMuNfNuHbLEhTwQch2h5c10Bg?usp=sharing" class="button" target="_blank">Regarding Project Reports</a>
+    <a href="https://freshgaurd.jarviz.site/settings.html" class="button" target="_blank">Simulator Link</a>
+  </section>
+
+</div>
+
+<footer>
+  @ 2024 | Fresh Guard Thermo Oasis
+</footer>
+
+<script>
+  // Dynamic Navbar Scrolling Effect
+  window.addEventListener('scroll', function () {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 50) {
+      nav.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.2)";
+    } else {
+      nav.style.boxShadow = "none";
+    }
+  });
+</script>
+
+</body>
+</html>
